@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Java by Example: Arrays</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'control-statements';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'loops';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="arrays">
+      <h2><a href="./">Java by Example</a>: Arrays</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>In Java, an <em>array</em> is a container object that holds a fixed number of values of a single type. The length of the array is established when the array is created and array length is fixed.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+          <pre class="chroma">public class Main {
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+          <pre class="chroma">public static void main(String[] args) {
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Here we declare an array of integers. The type of elements and size are both part of the array's type. By default an array is filled with the default value of the type, which for <code>int</code>s means <code>0</code>s.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    int[] anArray = new int[10];
+    System.out.println(Arrays.toString(anArray));
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>We can set a value at an index using the <code>array[index] = value</code> syntax, and get a value with <code>array[index]</code>.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    anArray[4] = 100;
+    System.out.println(Arrays.toString(anArray));
+    System.out.println("Element at index 4: " + anArray[4]);
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>The property <code>length</code> returns the length of an array.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    System.out.println("Length: " + anArray.length);
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>You can initialize an array in one line.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    int[] b = {1, 2, 3, 4, 5};
+    System.out.println(Arrays.toString(b));
+</pre>
+          </td>
+        </tr>
+        <tr>
+          <td class="docs">
+            <p>We can iterate over an array using a for-each loop. The for-each loop iterates over each element of the array, from the first (index 0) to the last.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    for (int number : b) {
+        System.out.println(number);
+    }
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>You can also use a for loop to iterate over an array by index.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    for (int i = 0; i < b.length; i++) {
+        System.out.println(b[i]);
+    }
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Arrays in Java have a fixed size. However, if you need a dynamically sized array, you might want to use the <code>ArrayList</code> class in the Java Collections Framework.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    ArrayList&lt;Integer&gt; arrayList = new ArrayList&lt;&gt;();
+    arrayList.add(1);
+    arrayList.add(2);
+    arrayList.add(3);
+    System.out.println(arrayList);
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>We can also declare multidimensional arrays in Java. Here's a two-dimensional array (an array of arrays).</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    int[][] twoDArray = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+    for (int[] row : twoDArray) {
+        System.out.println(Arrays.toString(row));
+    }
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+          <pre class="chroma">  }
+}
+</pre>
+          </td>
+        </tr>
+      </table>
+      <p><em>Next: <a href="loops">Loops in Java</a></em></p>
+    </div>
+  </body>
+</html>
+

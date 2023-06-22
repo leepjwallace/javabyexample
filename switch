@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Java by Example: Switch</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'if-else';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'arrays';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="switch">
+      <h2><a href="./">Java by Example</a>: Switch</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p><em>Switch statements</em> in Java are multi-way branches that enable an expression to be tested for equality against a list of values. Each value is a case, and the variable being switched on is checked for each case.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            <a href="https://java.dev/play/p/qVDqWoUQ6AI"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+          <pre class="chroma"><span class="kn">public</span> <span class="kn">class</span> <span class="nx">Main</span> {
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma"><span class="kn">public</span> <span class="kn">static</span> <span class="kn">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">String</span>[] <span class="nv">args</span><span class="p">)</span> {
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Here's a basic <code>switch</code> in Java.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    <span class="kt">int</span> <span class="nv">i</span> = <span class="mi">2</span>;
+    <span class="k">switch</span> (i) {
+        <span class="k">case</span> 1:
+            <span class="kt">System</span>.out.println("one");
+            <span class="k">break</span>;
+        <span class="k">case</span> 2:
+            <span class="kt">System</span>.out.println("two");
+            <span class="k">break</span>;
+        <span class="k">case</span> 3:
+            <span class="kt">System</span>.out.println("three");
+            <span class="k">break</span>;
+        <span class="k">default</span>:
+            <span class="kt">System</span>.out.println("other");
+            <span class="k">break</span to reduce visual noise
+    </pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            <p>The variable <code>i</code> is being switched upon. It is compared with each case. If a match is found, the statements after the matching case are executed. If no match is found, the <code>default</code> case is executed.</p>
+            <p>The <code>break</code> keyword at the end of each case block is necessary to prevent "fallthrough", where after a match is found, the code would continue executing the statements in the following case blocks as well. If the <code>break</code> keyword is omitted, ensure that is the desired behavior.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+}
+</pre>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+}
+</pre>
+          </td>
+        </tr>
+
+      </table>
+
+      <p><a href="./">← Java by Example</a></p>
+
+    </div>
+  </body>
+</html>
+

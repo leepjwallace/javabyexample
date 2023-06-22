@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Java by Example: For</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'constants';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'if-else';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="for">
+      <h2><a href="./">Java by Example</a>: For</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p><code>for</code> is one of Java's looping constructs. Here are
+some basic types of <code>for</code> loops.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma"><span class="kn">public class</span> <span class="nx">Main</span> {
+    <span class="kn">public static void</span> <span class="nf">main</span><span class="p">(String[] args)</span> {
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>The most basic type, with a single condition.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    <span class="k">for</span> <span class="kt">int</span> <span class="n">i</span> = <span class="mi">1</span>; <span class="n">i</span> <= <span class="mi">3</span>; <span class="n">i</span>++) {
+        <span class="n">System.out.println</span>(<span class="n">i</span>);
+    }
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>A classic initial/condition/after <code>for</code> loop.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    <span class="k">for</span> <span class="kt">int</span> <span class="n">j</span> = <span class="mi">7</span>; <span class="n">j</span> <= <span class="mi">9</span>; <span class="n">j</span>++) {
+        <span class="n">System.out.println</span>(<span class="n">j</span>);
+    }
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p><code>for</code> without a condition will loop indefinitely.
+You can <code>break</code> out of the loop to stop it.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+    <span class="k">for</span> <span class="p">( ; ; )</span> {
+        <span class="n">System.out.println</span>(<span class="s">"loop"</span>);
+        <span class="k">break</span>;
+    }
+</pre>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>You can also <code>continue</code> to the next iteration of
+the loop.</p>
+
+          </td>
+          <td class="code">
+            
+          <pre class="chroma">
+    <span class="k">for</span> <span class="kt">int</span> <span class="n">n</span> = <span class="mi">0</span>; <span class="n">n</span> <= <span class="mi">5</span>; <span class="n">n</span>++) {
+        <span class="k">if</span> (<span class="n">n</span> % <span class="mi">2</span> == <span class="mi">0</span>) {
+            <span class="k">continue</span>;
+        }
+        <span class="n">System.out.println</span>(<span class="n">n</span>);
+    }
+<span class="p">}</span>
+<span class="p">}</span>
+</pre>
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <pre class="chroma">
+<span class="go">1
+</span><span class="go">2
+</span><span class="go">3
+</span><span class="go">7
+</span><span class="go">8
+</span><span class="go">9
+</span><span class="go">loop
+</span><span class="go">1
+</span><span class="go">3
+</span><span class="go">5</span></pre>
+          </td>
+        </r>
+        
+        <tr>
+          <td class="docs">
+            <p>We'll see some other <code>for</code> forms later when we look at
+<code>enhanced for</code> statements, and other data
+structures.</p>
+
+          </td>
+          <td class="code empty">
+            
+          
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Next example: <a href="while">While</a>.
+      </p>
+      
+
+    <p class="footer">
+      by <a href="https://www.leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
+      based on <a href="https://gobyexample.com">Go By Example</a>
+    </p>
+
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('public class Main {\u000Apublic static void main(String[] args) {\u000A');
+      codeLines.push('    for (int i = 1; i <= 3; i++) {\u000A        System.out.println(i);\u000A    }\u000A');
+      codeLines.push('    for (int j = 7; j <= 9; j++) {\u000A        System.out.println(j);\u000A    }\u000A');
+      codeLines.push('    while (true) {\u000A        System.out.println("loop");\u000A        break;\u000A    }\u000A');
+      codeLines.push('    for (int n = 0; n <= 5; n++) {\u000A        if (n % 2 == 0) {\u000A            continue;\u000A        }\u000A        System.out.println(n);\u000A    }\u000A}\u000A}\u000A');
+      codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+  </body>
+</html>
+t

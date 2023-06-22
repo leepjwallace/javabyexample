@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Java by Example: For and While Loops</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => { 
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'constants';
+          } 
+          if (e.key == "ArrowRight") {
+              window.location.href = 'if-else';
+          } 
+      }
+  </script>
+  <body>
+    <div class="example" id="for">
+      <h2><a href="./">Java by Example</a>: For and While Loops</h2>
+      
+      <table>
+        <tr>
+          <td class="docs">
+            <p>In Java, <code>for</code> and <code>while</code> are the primary looping constructs. Here are some basic types of <code>for</code> and <code>while</code> loops.</p>
+            <p>public class Main {</p>
+            <p>public static void main(String[] args) {</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            <p>The most basic type of for loop, with a single condition.</p>
+            <p>for (int i = 1; i <= 3; i++) {</p>
+            <p>System.out.println(i);</p>
+            <p>}</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            <p>A classic initial/condition/increment for loop.</p>
+            <p>for (int j = 7; j <= 9; j++) {</p>
+            <p>System.out.println(j);</p>
+            <p>}</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            <p>A while loop without a condition will loop repeatedly until you <code>break</code> out of the loop.</p>
+            <p>while (true) {</p>
+            <p>System.out.println("loop");</p>
+            <p>break;</p>
+            <p>}</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="docs">
+            <p>You can also <code>continue</code> to the next iteration of the loop.</p>
+            <p>for (int n = 0; n <= 5; n++) {</p>
+            <p>if (n % 2 == 0) {</p>
+            <p>continue;</p>
+            <p>}</p>
+            <p>System.out.println(n);</p>
+            <p>}</p>
+            <p>}</p>
+            <p>}</p>
+          </td>
+        </tr>
+      </table>
+
+      <p class="next">
+        Next example: <a href="if-else">If/Else</a>.
+      </p>
+
+    <p class="footer">
+      by <a href="https://www.leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
+      based on <a href="https://gobyexample.com">Go By Example</a>
+    </p>
+
+    </div>
+  </body>
+</html>
+
