@@ -7,38 +7,38 @@
   </head>
   <script>
       onkeydown = (e) => {
-          
+
           if (e.key == "ArrowLeft") {
               window.location.href = 'values';
           }
-          
-          
+
+
           if (e.key == "ArrowRight") {
               window.location.href = 'constants';
           }
-          
+
       }
   </script>
   <body>
     <div class="example" id="variables">
       <h2><a href="./">Java by Example</a>: Variables</h2>
-      
+
       <table>
-        
+
         <tr>
           <td class="docs">
             <p>In Java, <em>variables</em> are explicitly declared with specific data types.</p>
 
           </td>
           <td class="code empty leading">
-            
-          
+
+
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
-            
+
           </td>
           <td class="code leading">
             <a href="#"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
@@ -46,39 +46,39 @@
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
-            
+
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma"><span class="kn">public</span> <span class="kd">static</span> <span class="kd">void</span> <span class="nf">main</span><span class="p">(</span><span class="kd">String</span>[] <span class="kd">args</span>)<span class="p">{</span>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>Variables in Java must be declared before use, with their data type specified.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="kd">String</span> <span class="nx">a</span> <span class="p">=</span> <span class="s">&#34;initial&#34;</span>;
     <span class="kd">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>You can declare multiple variables of the same type at once.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="kd">int</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span>;
     <span class="nx">b</span> <span class="p">=</span> <span class="mi">1</span>;
@@ -87,21 +87,21 @@
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>Java requires explicit type declaration for all variables.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="kd">boolean</span> <span class="nx">d</span> <span class="p">=</span> <span class="kc">true</span>;
     <span class="kd">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>Variables declared without a corresponding
@@ -109,14 +109,14 @@ initialization are <em>zero-valued</em> or <em>null-valued</em> depending on the
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="kd">int<span> <span class="nx">e</span>;
     <span class="kd">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>In Java, there is no shorthand for declaring and
@@ -124,7 +124,7 @@ initializing a variable. Each step must be done explicitly.</p>
 
           </td>
           <td class="code">
-            
+
           <pre class="chroma">
     <span class="kd">String</span> <span class="nx">f</span>;
     <span class="nx">f</span> <span class="p">=</span> <span class="s">&#34;apple&#34;</span>;
@@ -133,17 +133,17 @@ initializing a variable. Each step must be done explicitly.</p>
 </pre>
           </td>
         </tr>
-        
+
       </table>
-      
+
       <table>
-        
+
         <tr>
           <td class="docs">
-            
+
           </td>
           <td class="code">
-            
+
           <pre class="chroma">Output:
 <span class="go">initial
 </span><span class="go">1 2
@@ -152,17 +152,17 @@ initializing a variable. Each step must be done explicitly.</p>
 </span><span class="go">apple</span></pre>
           </td>
         </tr>
-        
+
       </table>
-      
-      
+
+
       <p class="next">
         Next example: <a href="constants.html">Constants</a>.
       </p>
-      
+
 
     <p class="footer">
-      by <a href="https://www.leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
+      by <a href="https://leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
       based on <a href="https://gobyexample.com">Go By Example</a>
     </p>
 

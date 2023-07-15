@@ -7,24 +7,24 @@
   </head>
   <script>
       onkeydown = (e) => {
-          
+
           if (e.key == "ArrowLeft") {
               window.location.href = 'constants';
           }
-          
-          
+
+
           if (e.key == "ArrowRight") {
               window.location.href = 'if-else';
           }
-          
+
       }
   </script>
   <body>
     <div class="example" id="for">
       <h2><a href="./">Java by Example</a>: For</h2>
-      
+
       <table>
-        
+
         <tr>
           <td class="docs">
             <p><code>for</code> is one of Java's looping constructs. Here are
@@ -32,30 +32,30 @@ some basic types of <code>for</code> loops.</p>
 
           </td>
           <td class="code empty leading">
-            
-          
+
+
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
-            
+
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma"><span class="kn">public class</span> <span class="nx">Main</span> {
     <span class="kn">public static void</span> <span class="nf">main</span><span class="p">(String[] args)</span> {
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>The most basic type, with a single condition.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="k">for</span> <span class="kt">int</span> <span class="n">i</span> = <span class="mi">1</span>; <span class="n">i</span> <= <span class="mi">3</span>; <span class="n">i</span>++) {
         <span class="n">System.out.println</span>(<span class="n">i</span>);
@@ -63,14 +63,14 @@ some basic types of <code>for</code> loops.</p>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>A classic initial/condition/after <code>for</code> loop.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="k">for</span> <span class="kt">int</span> <span class="n">j</span> = <span class="mi">7</span>; <span class="n">j</span> <= <span class="mi">9</span>; <span class="n">j</span>++) {
         <span class="n">System.out.println</span>(<span class="n">j</span>);
@@ -78,7 +78,7 @@ some basic types of <code>for</code> loops.</p>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p><code>for</code> without a condition will loop indefinitely.
@@ -86,7 +86,7 @@ You can <code>break</code> out of the loop to stop it.</p>
 
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
     <span class="k">for</span> <span class="p">( ; ; )</span> {
         <span class="n">System.out.println</span>(<span class="s">"loop"</span>);
@@ -95,7 +95,7 @@ You can <code>break</code> out of the loop to stop it.</p>
 </pre>
           </td>
         </tr>
-        
+
         <tr>
           <td class="docs">
             <p>You can also <code>continue</code> to the next iteration of
@@ -103,7 +103,7 @@ the loop.</p>
 
           </td>
           <td class="code">
-            
+
           <pre class="chroma">
     <span class="k">for</span> <span class="kt">int</span> <span class="n">n</span> = <span class="mi">0</span>; <span class="n">n</span> <= <span class="mi">5</span>; <span class="n">n</span>++) {
         <span class="k">if</span> (<span class="n">n</span> % <span class="mi">2</span> == <span class="mi">0</span>) {
@@ -116,17 +116,17 @@ the loop.</p>
 </pre>
           </td>
         </tr>
-        
+
       </table>
-      
+
       <table>
-        
+
         <tr>
           <td class="docs">
-            
+
           </td>
           <td class="code leading">
-            
+
           <pre class="chroma">
 <span class="go">1
 </span><span class="go">2
@@ -140,7 +140,7 @@ the loop.</p>
 </span><span class="go">5</span></pre>
           </td>
         </r>
-        
+
         <tr>
           <td class="docs">
             <p>We'll see some other <code>for</code> forms later when we look at
@@ -149,21 +149,21 @@ structures.</p>
 
           </td>
           <td class="code empty">
-            
-          
+
+
           </td>
         </tr>
-        
+
       </table>
-      
-      
+
+
       <p class="next">
         Next example: <a href="while.html">While</a>.
       </p>
-      
+
 
     <p class="footer">
-      by <a href="https://www.leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
+      by <a href="https://leewallace.me">Lee Wallace</a> | <a href="https://github.com/leepjwallace/javabyexample#license">License</a> <br>
       based on <a href="https://gobyexample.com">Go By Example</a>
     </p>
 
